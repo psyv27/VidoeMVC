@@ -1,0 +1,103 @@
+@model vidoeMVC.ViewModels.Payments.ManageSubscriptionViewModel
+
+@{
+    ViewData["Title"] = "Manage Subscription";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3>
+                        <i class="fas fa-cog"></i>
+                        Manage Your Subscription
+                    </h3>
+                </div>
+                <div class="card-body">
+                    @if (Model.IsPremium)
+                    {
+                        <div class="alert alert-success">
+                            <h5><i class="fas fa-crown text-warning"></i> Premium Member</h5>
+                            @if (Model.ExpiryDate.HasValue)
+                            {
+                                <p>Your subscription expires on: <strong>@Model.ExpiryDate.Value.ToString("MMM dd, yyyy")</strong></p>
+                            }
+                        </div>
+
+                        @if (Model.Subscription != null)
+                        {
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Subscription Details</h6>
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <td><strong>Type:</strong></td>
+                                            <td>@Model.Subscription.Type</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Status:</strong></td>
+                                            <td>
+                                                <span class="badge bg-success">@Model.Subscription.Status</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Start Date:</strong></td>
+                                            <td>@Model.Subscription.StartDate.ToString("MMM dd, yyyy")</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>End Date:</strong></td>
+                                            <td>@Model.Subscription.EndDate.ToString("MMM dd, yyyy")</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Price:</strong></td>
+                                            <td>$@Model.Subscription.Price</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Auto Renew:</strong></td>
+                                            <td>@(Model.Subscription.AutoRenew ? "Yes" : "No")</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            @if (Model.Subscription.Status == vidoeMVC.Enums.SubscriptionStatus.Active)
+                            {
+                                <div class="mt-4">
+                                    <h6>Cancel Subscription</h6>
+                                    <form asp-action="CancelSubscription" method="post" onsubmit="return confirm('Are you sure you want to cancel your subscription?');">
+                                        <input type="hidden" name="subscriptionId" value="@Model.Subscription.Id" />
+                                        <div class="mb-3">
+                                            <label for="reason" class="form-label">Reason for cancellation (optional)</label>
+                                            <select name="reason" class="form-select">
+                                                <option value="">Select a reason</option>
+                                                <option value="Too expensive">Too expensive</option>
+                                                <option value="Not using enough">Not using enough</option>
+                                                <option value="Technical issues">Technical issues</option>
+                                                <option value="Content not satisfactory">Content not satisfactory</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-danger">
+                                            <i class="fas fa-times"></i> Cancel Subscription
+                                        </button>
+                                    </form>
+                                </div>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <div class="alert alert-info">
+                            <h5>No Active Subscription</h5>
+                            <p>You don't currently have an active premium subscription.</p>
+                            <a asp-action="Subscribe" class="btn btn-warning">
+                                <i class="fas fa-crown"></i> Subscribe to Premium
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

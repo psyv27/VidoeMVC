@@ -22,6 +22,8 @@ namespace vidoeMVC.DAL
         public DbSet<VideoLike> VideoLikes { get; set; }
         public DbSet<VideoComment> VideoComments { get; set; }
         public DbSet<VideoReport> VideoReports { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -117,6 +119,39 @@ namespace vidoeMVC.DAL
                     .WithMany(u => u.VideoReports)
                     .HasForeignKey(vr => vr.UserId)
                     .OnDelete(DeleteBehavior.Restrict); // Изменение каскадного удаления на Restrict
+            });
+
+            // Payment entity configuration
+            modelBuilder.Entity<Payment>(entity =>
+            {
+                entity.HasKey(p => p.Id);
+                
+                entity.Property(p => p.Amount)
+                    .HasColumnType("decimal(18,2)");
+
+                entity.HasOne(p => p.User)
+                    .WithMany(u => u.Payments)
+                    .HasForeignKey(p => p.UserId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(p => p.Subscription)
+                    .WithMany(s => s.Payments)
+                    .HasForeignKey("SubscriptionId")
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            // Subscription entity configuration  
+            modelBuilder.Entity<Subscription>(entity =>
+            {
+                entity.HasKey(s => s.Id);
+                
+                entity.Property(s => s.Price)
+                    .HasColumnType("decimal(18,2)");
+
+                entity.HasOne(s => s.User)
+                    .WithMany(u => u.Subscriptions)
+                    .HasForeignKey(s => s.UserId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
         }
     }

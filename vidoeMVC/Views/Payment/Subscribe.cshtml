@@ -1,0 +1,90 @@
+@model vidoeMVC.ViewModels.Payments.SubscribeViewModel
+
+@{
+    ViewData["Title"] = "Premium Subscription";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">
+                        <i class="fas fa-crown text-warning"></i>
+                        Premium Subscription
+                    </h3>
+                </div>
+                <div class="card-body">
+                    @if (Model.CurrentlyPremium)
+                    {
+                        <div class="alert alert-success">
+                            <strong>You are already a premium member!</strong>
+                            @if (Model.ExpiryDate.HasValue)
+                            {
+                                <p>Your subscription expires on: @Model.ExpiryDate.Value.ToString("MMM dd, yyyy")</p>
+                            }
+                            <a asp-action="ManageSubscription" class="btn btn-primary">Manage Subscription</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="mb-4">
+                            <h5>Premium Benefits:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Access to premium videos</li>
+                                <li><i class="fas fa-check text-success"></i> Ad-free viewing experience</li>
+                                <li><i class="fas fa-check text-success"></i> Early access to new content</li>
+                                <li><i class="fas fa-check text-success"></i> Exclusive premium categories</li>
+                            </ul>
+                        </div>
+
+                        <form asp-action="Subscribe" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="SubscriptionType" class="form-label">Subscription Plan</label>
+                                        <select asp-for="SubscriptionType" class="form-select">
+                                            <option value="0">Monthly - $9.99/month</option>
+                                            <option value="1">Quarterly - $24.99/3 months</option>
+                                            <option value="2">Yearly - $79.99/year</option>
+                                        </select>
+                                        <span asp-validation-for="SubscriptionType" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="PaymentMethod" class="form-label">Payment Method</label>
+                                        <select asp-for="PaymentMethod" class="form-select">
+                                            <option value="0">Credit Card</option>
+                                            <option value="1">Debit Card</option>
+                                            <option value="2">PayPal</option>
+                                            <option value="3">Bank Transfer</option>
+                                        </select>
+                                        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input asp-for="AutoRenew" class="form-check-input" type="checkbox" checked>
+                                <label asp-for="AutoRenew" class="form-check-label">
+                                    Auto-renew subscription
+                                </label>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-warning btn-lg">
+                                    <i class="fas fa-crown"></i> Subscribe to Premium
+                                </button>
+                            </div>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

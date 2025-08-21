@@ -1,4 +1,5 @@
 ﻿using vidoeMVC.ViewModels.Users;
+using vidoeMVC.Enums;
 
 namespace vidoeMVC.ViewModels.Videos
 {
@@ -14,6 +15,7 @@ namespace vidoeMVC.ViewModels.Videos
             public string Duration { get; set; } 
             public UserVM Author { get; set; }
             public int ViewCount { get; set; }
+            public List<VideoStatus>? Privacy { get; set; }
            
         }
 

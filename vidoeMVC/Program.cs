@@ -72,6 +72,9 @@ public class Program
 
         // Add EmailService
         services.AddTransient<EmailService>();
+
+        // Add PremiumAccessService
+        services.AddTransient<IPremiumAccessService, PremiumAccessService>();
     }
 
     private static async Task EnsureRolesCreated(RoleManager<IdentityRole> roleManager)

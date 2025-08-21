@@ -83,6 +83,12 @@
                             <div class="time">
                                 <p>@video.Duration</p>
                             </div>
+                            @if (video.Privacy?.Contains(vidoeMVC.Enums.VideoStatus.Premium) == true)
+                            {
+                                <div class="premium-badge" style="position: absolute; top: 10px; right: 10px; background-color: #ffc107; color: #000; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: bold;">
+                                    <i class="fas fa-crown"></i> PREMIUM
+                                </div>
+                            }
                         </div>
                         <div class="video-card-body">
                             <div class="video-title">
