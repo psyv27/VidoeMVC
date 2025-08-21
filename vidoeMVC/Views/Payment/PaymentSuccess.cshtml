@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Payment Success";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+                    </div>
+                    <h2 class="text-success">Payment Successful!</h2>
+                    <p class="lead">Welcome to Premium!</p>
+                    <p>Your premium subscription is now active. You can now access all premium content.</p>
+                    
+                    <div class="mt-4">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-primary me-2">
+                            <i class="fas fa-home"></i> Go to Home
+                        </a>
+                        <a asp-action="ManageSubscription" class="btn btn-outline-secondary">
+                            <i class="fas fa-cog"></i> Manage Subscription
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

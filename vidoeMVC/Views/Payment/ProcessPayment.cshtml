@@ -1,0 +1,57 @@
+@model vidoeMVC.ViewModels.Payments.ProcessPaymentViewModel
+
+@{
+    ViewData["Title"] = "Process Payment";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">
+                        <i class="fas fa-credit-card"></i>
+                        Process Payment
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h5>Payment Details</h5>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td><strong>Description:</strong></td>
+                                <td>@Model.Description</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Amount:</strong></td>
+                                <td><span class="h5 text-success">$@Model.Amount</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Payment Method:</strong></td>
+                                <td>@Model.PaymentMethod</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Demo Mode:</strong> This is a demo payment. In a real application, this would integrate with a payment gateway like Stripe, PayPal, etc.
+                    </div>
+
+                    <form asp-action="CompletePayment" method="post">
+                        <input type="hidden" name="paymentId" value="@Model.PaymentId" />
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="fas fa-check"></i> Complete Payment
+                            </button>
+                            <a asp-action="Subscribe" class="btn btn-outline-secondary">
+                                <i class="fas fa-arrow-left"></i> Back to Subscription
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

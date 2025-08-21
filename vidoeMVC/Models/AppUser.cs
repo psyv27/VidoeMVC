@@ -23,5 +23,11 @@ namespace vidoeMVC.Models
         public ICollection<VideoLike>? VideoLike { get; set; }
 
         public ICollection<VideoReport>? VideoReports { get; set; }
+
+        // Premium subscription properties
+        public bool IsPremium { get; set; } = false;
+        public DateTime? PremiumExpiryDate { get; set; }
+        public ICollection<Subscription>? Subscriptions { get; set; }
+        public ICollection<Payment>? Payments { get; set; }
     }
 }

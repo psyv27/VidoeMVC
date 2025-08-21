@@ -8,10 +8,12 @@ using vidoeMVC.ViewModels;
 using vidoeMVC.DAL;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using vidoeMVC.Services;
+using vidoeMVC.Enums;
 
 namespace vidoeMVC.Controllers
 {
-    public class VideoPageController(UserManager<AppUser> _userManager, VidoeDBContext _context, EmailService _emailService) : Controller
+    public class VideoPageController(UserManager<AppUser> _userManager, VidoeDBContext _context, EmailService _emailService, IPremiumAccessService _premiumAccessService) : Controller
     {
         public async Task<IActionResult> Index(int? id)
         {
@@ -51,6 +53,18 @@ namespace vidoeMVC.Controllers
             if (video == null)
             {
                 return NotFound();
+            }
+
+            // Check premium access for premium videos
+            var currentUserId = _userManager.GetUserId(User);
+            if (video.Privacy?.Contains(VideoStatus.Premium) == true)
+            {
+                var hasAccess = await _premiumAccessService.CanAccessVideoAsync(currentUserId ?? "", video);
+                if (!hasAccess)
+                {
+                    TempData["ErrorMessage"] = "This is a premium video. Please subscribe to premium to access it.";
+                    return RedirectToAction("Subscribe", "Payment");
+                }
             }
 
             video.ViewCount++;

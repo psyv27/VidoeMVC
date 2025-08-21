@@ -8,6 +8,7 @@ using vidoeMVC.ViewModels;
 using vidoeMVC.ViewModels.Categories;
 using vidoeMVC.ViewModels.Users;
 using vidoeMVC.ViewModels.Videos;
+using vidoeMVC.Services;
 
 namespace vidoeMVC.Controllers
 {
@@ -15,11 +16,13 @@ namespace vidoeMVC.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly VidoeDBContext _context;
+        private readonly IPremiumAccessService _premiumAccessService;
 
-        public HomeController(UserManager<AppUser> userManager, VidoeDBContext context)
+        public HomeController(UserManager<AppUser> userManager, VidoeDBContext context, IPremiumAccessService premiumAccessService)
         {
             _userManager = userManager;
             _context = context;
+            _premiumAccessService = premiumAccessService;
         }
 
         public async Task<IActionResult> Index(int? page)
@@ -27,8 +30,25 @@ namespace vidoeMVC.Controllers
             const int pageSize = 8; // Number of items per page
             var categories = await _context.Categories.ToListAsync();
 
-            // Query videos with pagination
-            var videos = await _context.Videos.Where(u=>u.Privacy.Contains(VideoStatus.Public))
+            // Get current user and check premium status
+            var currentUserId = _userManager.GetUserId(User);
+            var hasPremiumAccess = !string.IsNullOrEmpty(currentUserId) && await _premiumAccessService.HasPremiumAccessAsync(currentUserId);
+
+            // Query videos with pagination - show public videos and premium videos for premium users
+            var videosQuery = _context.Videos.AsQueryable();
+            
+            if (hasPremiumAccess)
+            {
+                // Premium users can see both public and premium videos
+                videosQuery = videosQuery.Where(v => v.Privacy.Contains(VideoStatus.Public) || v.Privacy.Contains(VideoStatus.Premium));
+            }
+            else
+            {
+                // Non-premium users can only see public videos
+                videosQuery = videosQuery.Where(v => v.Privacy.Contains(VideoStatus.Public));
+            }
+
+            var videos = await videosQuery
                 .Include(v => v.Author)
                 .OrderByDescending(v => v.CreatedTime)
                 .Skip((page - 1 ?? 0) * pageSize)
@@ -41,6 +61,7 @@ namespace vidoeMVC.Controllers
                     VideoUrl = v.VideoUrl,
                     CreatedTime = v.CreatedTime,
                     ViewCount = v.ViewCount,
+                    Privacy = v.Privacy,
                     Author = new UserVM
                     {
                         UserName = v.Author.UserName,
