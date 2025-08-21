@@ -17,143 +17,143 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = vidoeMVC
 build_property.RootNamespace = vidoeMVC
-build_property.ProjectDir = C:\Users\Emil\Desktop\proje\vidoeMVC\VidoeMVC\vidoeMVC\
+build_property.ProjectDir = /home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Emil\Desktop\proje\vidoeMVC\VidoeMVC\vidoeMVC
+build_property.MSBuildProjectDirectory = /home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/AdminVideos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5WaWRlb3NcSW5kZXguY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/AdminVideos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5WaWRlb3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/Category/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/Category/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/Category/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/UserRole/ManageRoles.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclJvbGVcTWFuYWdlUm9sZXMuY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/UserRole/ManageRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlclJvbGUvTWFuYWdlUm9sZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ConfirmEmail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Db25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ForgotPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Gb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ForgotPasswordConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Gb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ResetPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ResetPasswordConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Account/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Channels/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbm5lbHNcSW5kZXguY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Channel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbm5lbC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Channel/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbm5lbFxJbmRleC5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Channels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbm5lbHMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Home/Search.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/LikedVid/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlrZWRWaWRcSW5kZXguY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/LikedVid/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlrZWRWaWQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/MyChannel/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDaGFubmVsXEluZGV4LmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/MyChannel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXlDaGFubmVsL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/MySubscription/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlTdWJzY3JpcHRpb25cSW5kZXguY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/MySubscription/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXlTdWJzY3JpcHRpb24vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Settings/UserSetting.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcVXNlclNldHRpbmcuY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Settings/UserSetting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvVXNlclNldHRpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Shared/_Layout1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Shared/_Layout2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/VideoPage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9QYWdlXEluZGV4LmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/VideoPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlkZW9QYWdlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/VideoPage/_CommentsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9QYWdlXF9Db21tZW50c1BhcnRpYWwuY3NodG1s
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/VideoPage/_CommentsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlkZW9QYWdlL19Db21tZW50c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/VideoPage/_RelatedVideosPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9QYWdlXF9SZWxhdGVkVmlkZW9zUGFydGlhbC5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/VideoPage/_RelatedVideosPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlkZW9QYWdlL19SZWxhdGVkVmlkZW9zUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/VideoUpload/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9VcGxvYWRcQ3JlYXRlLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/VideoUpload/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlkZW9VcGxvYWQvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/VideoUpload/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9VcGxvYWRcRWRpdC5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/VideoUpload/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlkZW9VcGxvYWQvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Emil/Desktop/proje/vidoeMVC/VidoeMVC/vidoeMVC/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-ethlm9ic73
+[/home/runner/work/VidoeMVC/VidoeMVC/vidoeMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5i0a3ba0qi
