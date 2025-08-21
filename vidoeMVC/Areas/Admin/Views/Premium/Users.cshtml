@@ -1,0 +1,101 @@
+@model List<vidoeMVC.Areas.Admin.Controllers.PremiumUserViewModel>
+
+@{
+    ViewData["Title"] = "Premium Users";
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Premium Users Management</h1>
+        <a asp-action="Index" class="btn btn-primary">
+            <i class="fas fa-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Premium Users (@Model.Count)</h6>
+        </div>
+        <div class="card-body">
+            @if (Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-bordered" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Premium Status</th>
+                                <th>Expiry Date</th>
+                                <th>Subscription Type</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model)
+                            {
+                                <tr>
+                                    <td>@user.UserName</td>
+                                    <td>@user.Name</td>
+                                    <td>@user.Email</td>
+                                    <td>
+                                        @if (user.IsPremium)
+                                        {
+                                            <span class="badge badge-success">
+                                                <i class="fas fa-crown"></i> Premium
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge badge-secondary">Regular</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (user.PremiumExpiryDate.HasValue)
+                                        {
+                                            <span class="@(user.PremiumExpiryDate < DateTime.Now ? "text-danger" : "text-success")">
+                                                @user.PremiumExpiryDate.Value.ToString("MMM dd, yyyy")
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (user.ActiveSubscription != null)
+                                        {
+                                            <span class="badge badge-info">@user.ActiveSubscription.Type</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <form asp-action="ToggleUserPremium" method="post" style="display: inline;">
+                                            <input type="hidden" name="userId" value="@user.Id" />
+                                            <button type="submit" class="btn btn-sm @(user.IsPremium ? "btn-warning" : "btn-success")" 
+                                                    onclick="return confirm('Are you sure you want to toggle premium status for this user?')">
+                                                <i class="fas fa-@(user.IsPremium ? "times" : "crown")"></i>
+                                                @(user.IsPremium ? "Remove Premium" : "Grant Premium")
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-4">
+                    <i class="fas fa-users fa-3x text-gray-300 mb-3"></i>
+                    <p class="text-muted">No premium users found.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
